@@ -1,9 +1,10 @@
 /* ============================================================
    Enigma Entertainment Group — main.js
-   Three small, framework-free behaviors:
+   Four small, framework-free behaviors:
      1. Mobile menu (hamburger) with accessible open/close
      2. Scroll reveals (IntersectionObserver, reduced-motion aware)
      3. Scroll-spy (highlights the nav link for the section in view)
+     4. Email buttons: copy the address on click as a safety net
    Plus: keeps the footer year current.
    ============================================================ */
 
@@ -102,6 +103,65 @@
       { rootMargin: '-35% 0px -55% 0px', threshold: 0 }
     );
     sections.forEach(function (s) { spyObserver.observe(s.el); });
+  }
+
+  /* ---------- 4. Email buttons: copy address as a safety net ---------- */
+  // A mailto: link asks the OS to open "the default mail app". Visitors who
+  // read mail in a browser tab (Gmail, Outlook.com) often have no such app
+  // registered, so the click silently does nothing. We never block the
+  // mailto (people WITH a mail app still get their compose window) — we
+  // additionally copy the address and confirm it, so every click succeeds.
+  var mailLinks = document.querySelectorAll('a[href^="mailto:"]');
+
+  if (mailLinks.length) {
+    // One shared toast, created once and announced politely to screen readers
+    var toast = document.createElement('div');
+    toast.className = 'copy-toast';
+    toast.setAttribute('role', 'status');
+    document.body.appendChild(toast);
+    var toastTimer = null;
+
+    var showToast = function (message) {
+      toast.textContent = message;
+      toast.classList.add('is-shown');
+      clearTimeout(toastTimer);
+      toastTimer = setTimeout(function () {
+        toast.classList.remove('is-shown');
+      }, 2800);
+    };
+
+    // Fallback for browsers/contexts without the async Clipboard API
+    var legacyCopy = function (text) {
+      var area = document.createElement('textarea');
+      area.value = text;
+      area.setAttribute('readonly', '');
+      area.style.position = 'fixed';
+      area.style.opacity = '0';
+      document.body.appendChild(area);
+      area.select();
+      var ok = false;
+      try { ok = document.execCommand('copy'); } catch (err) { ok = false; }
+      document.body.removeChild(area);
+      return ok;
+    };
+
+    mailLinks.forEach(function (link) {
+      // "mailto:info@example.com?subject=Hi" -> "info@example.com"
+      var address = link.getAttribute('href').replace('mailto:', '').split('?')[0];
+
+      link.addEventListener('click', function () {
+        var confirmCopied = function () {
+          showToast(address + ' copied — paste it into any email');
+        };
+        if (navigator.clipboard && window.isSecureContext) {
+          navigator.clipboard.writeText(address).then(confirmCopied, function () {
+            if (legacyCopy(address)) { confirmCopied(); }
+          });
+        } else if (legacyCopy(address)) {
+          confirmCopied();
+        }
+      });
+    });
   }
 
   /* ---------- Footer year ---------- */

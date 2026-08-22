@@ -693,6 +693,35 @@ em.film-title { font-family: var(--font-display); font-style: italic; text-trans
 }
 .footer__links a:hover { color: var(--teal); }
 
+/* Feedback toast for the email button's copy-to-clipboard safety net */
+.copy-toast {
+  position: fixed;
+  left: 50%;
+  bottom: 28px;
+  z-index: 60;
+  max-width: calc(100vw - 40px);
+  padding: 12px 22px;
+  border: 1px solid var(--line-strong);
+  border-radius: var(--r-btn);
+  background: var(--bg-2);
+  color: var(--ink);
+  font-size: 13px;
+  letter-spacing: 0.04em;
+  text-align: center;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateX(-50%) translateY(8px);
+  transition: opacity var(--dur-hover) var(--ease-out),
+              transform var(--dur-hover) var(--ease-out),
+              visibility 0s linear var(--dur-hover);
+}
+.copy-toast.is-shown {
+  opacity: 1;
+  visibility: visible;
+  transform: translateX(-50%) translateY(0);
+  transition-delay: 0s;
+}
+
 /* ---------- 5. MOTION ---------- */
 @media (prefers-reduced-motion: no-preference) {
   .reveal {
