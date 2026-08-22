@@ -11,3 +11,6 @@ node_modules/
 
 # Staged-for-deletion files (safe to remove this folder entirely)
 _to_delete/
+
+# Brand assets for social profiles (not part of the deployed site)
+brand/
