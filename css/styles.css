@@ -471,6 +471,12 @@ em.film-title { font-family: var(--font-display); font-style: italic; text-trans
   line-height: 2;
   color: var(--ink-dim);
 }
+.feature__poster-img {
+  width: 100%;
+  height: auto;
+  border-radius: var(--r-card);
+  border: 1px solid var(--line-strong);
+}
 .feature__body { display: flex; flex-direction: column; gap: 18px; }
 .feature__title {
   font-family: var(--font-display);
@@ -801,7 +807,8 @@ em.film-title { font-family: var(--font-display); font-style: italic; text-trans
   .hero__title { font-size: 62px; }
   .story { grid-template-columns: 1fr; }
   .feature { grid-template-columns: 1fr; }
-  .feature__poster { max-width: 280px; margin-inline: auto; }
+  .feature__poster,
+  .feature__poster-img { max-width: 280px; margin-inline: auto; }
   .films { grid-template-columns: 1fr; }
   .founders { grid-template-columns: 1fr; }
   .founders__photo { max-width: 320px; }

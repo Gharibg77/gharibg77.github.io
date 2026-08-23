@@ -16,7 +16,7 @@ python -m http.server 8000
 | Text / links / sections | `index.html` |
 | Colors, fonts, spacing | the `:root` tokens at the top of `css/styles.css` |
 | Menu / animations | `js/main.js` |
-| The *reTribution* poster | add `assets/retribution-poster.jpg`, then replace the placeholder `<div class="feature__poster">` in `index.html` with `<img class="feature__poster-img" src="assets/retribution-poster.jpg" alt="reTribution film poster">` |
+| The *reTribution* poster | replace `assets/retribution-poster.jpg` with a new file of the same name (a higher-resolution original upgrades sharpness instantly, no code change) |
 
 Design decisions are documented in `docs/design-system.md`; `CLAUDE.md` gives AI assistants the project context.
 

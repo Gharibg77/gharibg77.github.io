@@ -32,7 +32,7 @@ Public website for Enigma Entertainment Group LLC — an independent film produc
 - All biographical copy about Nathan uses the family's own published phrasing — do not dramatize or rewrite it
 - No looping animations (the old pulsing logo glow was deliberately retired); all motion respects `prefers-reduced-motion`
 - No JS frameworks, no build step — the repo must deploy to GitHub Pages as-is
-- Real facts only: never invent awards, dates, or quotes. The poster slot in "Now Showing" is a marked placeholder until a real still/poster is provided (drop it in as `assets/retribution-poster.jpg` and replace the placeholder div in `index.html`)
+- Real facts only: never invent awards, dates, or quotes. The Now Showing poster lives at `assets/retribution-poster.jpg` (provided by the family); to update it, replace that file with a same-named image
 
 ## Deploy
 Commit and push to `main` — GitHub Pages serves the repo root. The legacy SvelteKit build (`_app/`, `200.html`) is no longer referenced by `index.html`.
