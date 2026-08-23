@@ -36,5 +36,8 @@ Public website for Enigma Entertainment Group LLC — an independent film produc
 ## Deploy
 Commit and push to `main` — GitHub Pages serves the repo root. The legacy SvelteKit build (`_app/`, `200.html`) is no longer referenced by `index.html`.
 
+## Positioning (per Scott Hewitt, Aug 2026)
+Primary audience: film distributors. Primary flow: watch *reTribution* → contact to distribute. Contact copy leads with distribution. No investor-facing content — the founders prefer self-financing to retain control. The site remains publicly findable (Carol's call).
+
 ## Tone
 Cinematic, warm, dignified. The site is about Nathan's living body of work — studio-first, memorial woven through quietly.

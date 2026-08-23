@@ -502,6 +502,12 @@ em.film-title { font-family: var(--font-display); font-style: italic; text-trans
   gap: 14px;
   margin-top: 6px;
 }
+.feature__distribution {
+  font-size: 13px;
+  letter-spacing: 0.04em;
+  color: var(--ink-dim);
+  margin-top: 4px;
+}
 
 /* --- Nathan's Work --- */
 .films {
