@@ -25,6 +25,7 @@ Public website for Enigma Entertainment Group LLC — an independent film produc
 - Uppercase text always gets letter-spacing ≥ 0.14em; serif display text is never uppercase
 - One accent color (teal). Gold appears only with festival laurels. Violet text appears only in the two memorial moments (2023 timeline node, footer dedication)
 - BEM-ish class naming: `block__element--modifier`
+- NO em or en dashes (— –) anywhere in user-visible site copy (Carol's rule: they read as AI-written). Rewrite the sentence instead. Ordinary hyphens in compound words (writer-director, festival-ready) are fine; meta separators use the middle dot (·)
 
 ## Constraints
 - Keep the logo artwork untouched — cropping/transparency for presentation is fine; redrawing is not

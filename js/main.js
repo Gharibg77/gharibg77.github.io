@@ -1,5 +1,5 @@
 /* ============================================================
-   Enigma Entertainment Group — main.js
+   Enigma Entertainment Group: main.js
    Four small, framework-free behaviors:
      1. Mobile menu (hamburger) with accessible open/close
      2. Scroll reveals (IntersectionObserver, reduced-motion aware)
@@ -109,7 +109,7 @@
   // A mailto: link asks the OS to open "the default mail app". Visitors who
   // read mail in a browser tab (Gmail, Outlook.com) often have no such app
   // registered, so the click silently does nothing. We never block the
-  // mailto (people WITH a mail app still get their compose window) — we
+  // mailto (people WITH a mail app still get their compose window); we
   // additionally copy the address and confirm it, so every click succeeds.
   var mailLinks = document.querySelectorAll('a[href^="mailto:"]');
 
@@ -151,7 +151,7 @@
 
       link.addEventListener('click', function () {
         var confirmCopied = function () {
-          showToast(address + ' copied — paste it into any email');
+          showToast(address + ' copied. Paste it into any email.');
         };
         if (navigator.clipboard && window.isSecureContext) {
           navigator.clipboard.writeText(address).then(confirmCopied, function () {

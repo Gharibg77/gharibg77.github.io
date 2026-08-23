@@ -1,9 +1,9 @@
 /* ============================================================
-   Enigma Entertainment Group — styles.css
+   Enigma Entertainment Group: styles.css
    Direction: "The Projector Room" (see docs/design-system.md)
 
    Organization:
-     1. Design tokens      (the atomic decisions — change these to re-theme)
+     1. Design tokens      (the atomic decisions; change these to re-theme)
      2. Base & reset
      3. Shared primitives  (container, eyebrow, buttons, links, laurel)
      4. Components         (nav, hero, story/timeline, feature, films,
@@ -78,7 +78,7 @@ img { max-width: 100%; height: auto; display: block; }
 a { color: var(--teal); text-decoration: none; transition: color var(--dur-hover) var(--ease-out); }
 a:hover { color: var(--teal-soft); }
 
-/* Every interactive element gets a visible focus ring — never removed */
+/* Every interactive element gets a visible focus ring, never removed */
 :focus-visible {
   outline: 2px solid var(--teal);
   outline-offset: 3px;
@@ -103,7 +103,7 @@ a:hover { color: var(--teal-soft); }
 }
 .skip-link:focus { top: 12px; color: var(--teal-ink); }
 
-/* Film titles are always display-serif italic, original casing —
+/* Film titles are always display-serif italic, original casing,
    even inside uppercase-transformed contexts */
 .film-title,
 em.film-title { font-family: var(--font-display); font-style: italic; text-transform: none; }
@@ -222,7 +222,7 @@ em.film-title { font-family: var(--font-display); font-style: italic; text-trans
 
 .icon-ext { flex: none; }
 
-/* Laurel award badge — gold appears ONLY here */
+/* Laurel award badge. Gold appears ONLY here */
 .laurel {
   display: inline-flex;
   align-items: center;
@@ -314,7 +314,7 @@ em.film-title { font-family: var(--font-display); font-style: italic; text-trans
 
 .nav__cta {
   border: 1px solid rgba(62, 201, 218, 0.45);
-  border-radius: 999px; /* the one pill on the site — nav affordance */
+  border-radius: 999px; /* the one pill on the site (nav affordance) */
   padding: 9px 20px !important;
   color: var(--teal) !important;
 }
@@ -358,7 +358,7 @@ em.film-title { font-family: var(--font-display); font-style: italic; text-trans
   width: auto;
   height: 190px;
   margin-bottom: 34px;
-  filter: drop-shadow(0 0 42px rgba(62, 201, 218, 0.28)); /* static glow — no pulsing */
+  filter: drop-shadow(0 0 42px rgba(62, 201, 218, 0.28)); /* static glow, no pulsing */
 }
 .hero__eyebrow { margin-bottom: 24px; }
 .hero__title {
@@ -559,7 +559,7 @@ em.film-title { font-family: var(--font-display); font-style: italic; text-trans
   align-items: center;
 }
 .founders__figure { margin: 0; display: flex; flex-direction: column; align-items: center; gap: 18px; }
-/* The source photo has a circular vignette baked in — embrace it */
+/* The source photo has a circular vignette baked in; embrace it */
 .founders__photo {
   width: 100%;
   max-width: 400px;
