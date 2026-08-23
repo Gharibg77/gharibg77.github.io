@@ -399,6 +399,36 @@ em.film-title { font-family: var(--font-display); font-style: italic; text-trans
 .story__intro strong { color: var(--ink); font-weight: 600; }
 .story__meta { font-size: 13px; color: var(--ink-dim); }
 
+/* Nathan's portrait, from the family's memorial card */
+.story__portrait {
+  display: flex;
+  align-items: center;
+  gap: 22px;
+  margin: 10px 0 0;
+}
+.story__portrait-photo {
+  width: 128px;
+  height: 128px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 1px solid rgba(156, 123, 232, 0.45); /* the memorial violet, quietly */
+}
+.story__portrait-caption { display: flex; flex-direction: column; gap: 6px; }
+.story__portrait-name {
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: 26px;
+  line-height: 1.2;
+  color: var(--ink-strong);
+}
+.story__portrait-dates {
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--ink-dim);
+}
+
 .timeline {
   list-style: none;
   margin: 0;
@@ -518,8 +548,29 @@ em.film-title { font-family: var(--font-display); font-style: italic; text-trans
 /* --- Nathan's Work --- */
 .films {
   display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
+  grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 32px;
+}
+.film-photo {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid var(--line);
+  border-radius: var(--r-card);
+  background: var(--card-fill);
+  overflow: hidden;
+}
+.film-photo img {
+  width: 100%;
+  height: 340px;
+  object-fit: cover;
+  object-position: top;
+}
+.film-photo figcaption {
+  font-size: 13px;
+  line-height: 1.6;
+  color: var(--ink-dim);
+  padding: 16px 20px;
 }
 .film-card {
   display: flex;
@@ -544,8 +595,8 @@ em.film-title { font-family: var(--font-display); font-style: italic; text-trans
   font-family: var(--font-display);
   font-style: italic;
   font-weight: 500;
-  font-size: 42px;
-  line-height: 1.05;
+  font-size: 36px;
+  line-height: 1.08;
   color: var(--ink-strong);
 }
 .film-card__meta {
@@ -746,6 +797,7 @@ em.film-title { font-family: var(--font-display); font-style: italic; text-trans
   /* stagger siblings inside grids */
   .films .reveal:nth-child(2),
   .pillars .reveal:nth-child(2) { transition-delay: 80ms; }
+  .films .reveal:nth-child(3),
   .pillars .reveal:nth-child(3) { transition-delay: 160ms; }
   .timeline .reveal:nth-child(2) { transition-delay: 80ms; }
   .timeline .reveal:nth-child(3) { transition-delay: 160ms; }

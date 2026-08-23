@@ -15,6 +15,8 @@ Public website for Enigma Entertainment Group LLC — an independent film produc
 - `assets/logo-lockup.png` — original logo artwork, background made transparent (used in hero)
 - `assets/logo-mark.png` — triangle-only crop of the same artwork (used in nav + footer)
 - `assets/founders.jpg` — Ann & Scott (photo has a circular vignette baked in; CSS renders it as a circle)
+- `assets/nathan-portrait.jpg` — Nathan's portrait (cropped from the family's memorial card; shown in Our Story with his dates)
+- `assets/nathan-omaha.jpg` — Nathan at the Omaha Film Festival premiere (leads the filmography grid)
 - `enigma-logo.png` — the ORIGINAL untouched logo file; never delete or overwrite
 - `docs/design-system.md` — tokens, type scale, component rules (the source of truth for styling decisions)
 - `docs/design-critique.md` — the critique that shaped the current layout
